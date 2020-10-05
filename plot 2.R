@@ -1,0 +1,5 @@
+#Crear plot 2 (base ya cargada)
+date <- strptime(paste(subbase$Date, subbase$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
+png("plot2.png", width=480, height=480)
+plot(date, globalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()
